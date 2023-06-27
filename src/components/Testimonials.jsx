@@ -27,7 +27,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className='bg-slate-500 absolute -right-[4%] w-[15%] -top-20 h-[200%] z-[5] rounded-full blue__gradient'></div>
+        <div className='bg-slate-500 absolute -right-[4%] w-[15%] -top-40 h-[120%] z-[5] rounded-full blue__gradient'></div>
       </div>
     </section>
   )

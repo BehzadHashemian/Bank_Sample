@@ -5,19 +5,19 @@ import { quotes } from '../assets'
 const Testimonials = () => {
   return (
     <section >
-      <div className='flex flex-col py-10'>
+      <div className='flex flex-col py-10 relative'>
         <div className='flex md:flex-row flex-col flex-1 justify-around items-center'>
           <h1 className={`${styles.heading2} md:w-[470px] md:-ml-16 my-10`}>What people are saying about us</h1>
           <p className={`${styles.paragraph} md:w-[450px] md:mr-16 my-10`}>Everything you need to accept card payments and grow your business anywhere on the planet.</p>
         </div>
-        <div className='flex md:flex-row flex-col justify-between items-center'>
+        <div className='flex md:flex-row flex-col justify-center items-center relative'>
           {feedback.map((feed,index) =>(
-            <div className='flex flex-col mx-4 w-[370px] p-10 feature-card rounded-3xl' key={index}>
+            <div className='flex flex-col mx-4 w-[370px] p-10 feature-card rounded-3xl z[1]' key={index}>
               <img src={quotes} alt="quots" className='w-[42px] mb-10' />
               <div>
                 <p className={`${styles.paragraph} `}>Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
               </div>
-              <div className='flex flex-row mt-4'>
+              <div className='flex flex-row mt-4 '>
                 <img src={feed.img} alt="profile" className='w-[48] h-[48px]'/>
                 <div className='flex flex-col'>
                   <span className='text-white font-poppins text-[20px] pl-6'>{feed.name}</span>
@@ -27,6 +27,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
+        <div className='bg-slate-500 absolute -right-[4%] w-[15%] -top-20 h-[200%] z-[5] rounded-full blue__gradient'></div>
       </div>
     </section>
   )

@@ -7,8 +7,8 @@ const CardDeal = () => {
     <section>
       <div className='flex md:flex-row flex-col my-10'>
         <div className='md:w-[50%] md:px-6 py-10 flex flex-col'>
-          <h1 className={`${styles.heading2} py-4 px-6`}>Find a better card deal in few easy steps.</h1>
-          <p className={`${styles.paragraph} py-4 pl-6 md:w-[500px]`}>Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.</p>
+          <h1 className={`${styles.heading2} py-4 sm:px-6 px-2`}>Find a better card deal in few easy steps.</h1>
+          <p className={`${styles.paragraph} py-4 sm:pl-6 px-2 md:w-[500px]`}>Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.</p>
             <div className='flex my-10 pl-6'>
               <Button />
             </div>       

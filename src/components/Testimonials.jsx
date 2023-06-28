@@ -12,9 +12,9 @@ const Testimonials = () => {
         </div>
         <div className='flex md:flex-row flex-col justify-center relative'>
           {feedback.map((feed,index) =>(
-            <div className='flex flex-col justify-between mx-4 w-[370px] p-10 feature-card rounded-3xl z[1]' key={index}>
+            <div className='flex flex-col justify-between mx-4 md:w-[30%] p-10 feature-card rounded-3xl z[1]' key={index}>
               <img src={quotes} alt="quots" className='w-[42px] mb-10' />
-              <div>
+              <div className='h-[50%] mb-4'>
                 <p className={`${styles.paragraph} `}>{feed.content}</p>
               </div>
               <div className='flex flex-row mt-4 '>

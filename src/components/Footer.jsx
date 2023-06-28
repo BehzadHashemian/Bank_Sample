@@ -4,15 +4,15 @@ import styles from '../style'
 import { footerLinks , socialMedia } from '../constants'
 const Footer = () => {
   return (
-    <footer className='flex flex-col my-10 justify-between items-center'>
-      <div className='flex md:flex-row justify-around flex-col md:w-[100%]'>
+    <footer className='flex flex-col my-10 justify-between items-center '>
+      <div className='flex md:flex-row justify-around flex-col w-[100%]'>
         <div className='flex flex-col justify-around items-center md:w-[40%] mb-10'>
           <img src={logo} alt="logo" className='md:w-[40%] mb-4'/>
           <p className={`${styles.paragraph} w-[50%] text-[14px] md:ml-16`}>A new way to make the payments easy, reliable and secure.</p>
         </div>
         <div className='flex flex-row text-white justify-around md:ml-10 md:w-[70%]'>
           {footerLinks.map((footerlink) => (
-            <div className='flex flex-col md:mx-10'>
+            <div className='flex flex-col md:mx-10  w-[30%]'>
               <h4 className='md:text-[20px] text-[16px] mb-4'>{footerlink.title}</h4>
               <ul>
                 {footerlink.links.map((link,index)=>(

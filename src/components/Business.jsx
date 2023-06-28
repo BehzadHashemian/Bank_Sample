@@ -5,7 +5,7 @@ import { features } from '../constants'
 const Business = () => {
   return (
     <section className='flex md:flex-row flex-col'>
-      <div className='md:w-[55%] ml-9'>
+      <div className='md:w-[55%] sm:mx-9 mx-6'>
         <h1 className={` ${styles.heading2} text-white font-poppins font-bold sm:text-[55px] text-[30px] mb-10`}>
           You do the business,<br/> we’ll handle the money.
         </h1>
